@@ -1,0 +1,198 @@
+Introdução
+Neste projeto, você realizará uma análise descritiva que mostrará à CEO de uma empresa de varejo o quão bem ou mal as vendas estão indo na empresa, medirá o engajamento do cliente com base em uma análise de coorte e realizará uma segmentação de clientes aplicando a metodologia RFM, para que o negócio possa focar seus esforços e adotar estratégias diferenciadas para cada segmento. Além disso, você aprenderá a importância da limpeza e do tratamento dos dados antes de realizar qualquer análise.
+
+A situação
+Você é Analista de Dados de uma consultoria de transformação digital que busca "apoiar nossos clientes na melhoria de seus negócios por meio de dados", como pode ser visto em seu site. O serviço mais contratado da empresa é o Business Intelligence, que busca integrar, visualizar e analisar grandes volumes de dados históricos para apoiar a tomada de decisões estratégicas.
+
+Seu chefe a convida para uma reunião com um novo cliente: UK Merch. Trata-se de uma empresa jovem, com apenas 10 meses, que se dedica à venda de vestuário no atacado, ou seja, vende em quantidades relativamente grandes (geralmente 20 peças ou mais) e oferece um preço mais competitivo que o varejo convencional. Seus clientes são empresas menores que abastecem seu estoque comprando da UK Merch.
+
+Na reunião, você conhece Frederico, Gerente Administrativo e Financeiro da empresa, e Alessandra, a CEO. "Abrimos há cerca de um ano no Reino Unido", Frederico começa nos dizendo. "Depois de alguns meses, como vimos que as vendas estavam indo bem e que nossos preços eram competitivos, decidimos expandir nossa operação para outros países da Europa."
+
+"Embora novos clientes tenham começado a chegar, não temos certeza se foi a decisão certa", acrescenta Alessandra. "Isso tornou nosso dia a dia mais complexo. Não temos certeza de onde vêm nossos melhores clientes, não temos sido muito rigorosos na coleta de dados e não sabemos como focar o trabalho de nossa equipe".
+
+Ambos ficam calados e atentos enquanto seu chefe dispara perguntas para ter uma ideia da situação financeira do negócio.
+
+"Quanto vocês vendem em média por mês? Quantas vendas vocês têm em cada mês? Qual é o mês em que vocês mais vendem? Quais são seus clientes mais importantes? Qual é o valor médio que seus clientes gastam? Qual porcentagem de seus clientes voltou a comprar? Como esta informação é desagregada de acordo com os países onde vocês vendem?"
+
+Ao tomar nota dessas novas perguntas e termos, você vê que Frederico e Alessandra se entreolham confusos.
+
+"Nós não sabemos como responder a nenhuma dessas perguntas", Alessandra responde, envergonhada.
+
+"Se vocês não conhecem suas vendas, ou o perfil de seus clientes, ou quão leais eles são, como vocês concentram seus esforços de marketing? A quem seus esforços de publicidade são direcionados? Qual é sua estratégia de vendas?", segue seu chefe
+
+"Nossa mensagem e estratégia é a mesma para todos os nossos clientes", responde a CEO, sabendo que não é a melhor resposta para essas perguntas.
+
+"Há muito o que fazer", diz seu chefe olhando para você.
+
+Saindo da reunião, você caminha com seu chefe pelo corredor enquanto ele lhe dá instruções: "Este é um tipo típico de cliente. Eles têm um bom modelo de negócios em mãos, mas não têm certeza se a estratégia que estão usando é a correta. Além disso, eles claramente não estão tomando decisões com base em dados. Alessandra, a CEO, compartilhou comigo um conjunto de dados das vendas do ano passado por fatura. Aparentemente, os dados não estão completos, mas é a única coisa que temos para trabalhar."
+
+Você quase esbarra em um colega enquanto ainda está andando e fazendo anotações.
+
+"A primeira coisa será revisar a qualidade dos dados. Eu sinto que eles não foram muito rigorosos na coleta de dados, então primeiro você deve verificar dados ausentes, dados duplicados sem correspondência (por exemplo, que a mesma nota foi registrada duas vezes) e valores que não fazem sentido, como números negativos nos preços ou quantidades dos itens".
+
+Vocês chegam ao escritório. Ele se senta e continua: "Depois, teremos que ter uma ideia geral da saúde do negócio. Para isso, você deve construir um dashboard que mostre as principais métricas de negócios, como as que lhe pedi na reunião, mas também gostaria que você fizesse sua própria colheita. Investigue e adicione as métricas e gráficos que você julgar convenientes para resumir os dados".
+
+"O que eu ainda não tenho muito claro é como medir a retenção de clientes…", ele pensa em voz alta enquanto toma um gole de café. A isso, você responde que aprendeu recentemente a fazer análise de coorte. Você já a aplicou para medir a retenção em uma startup SaaS mas alguns dias atrás você leu um artigo que explicava que você poderia fazer algo semelhante se tomasse a data da primeira compra de um cliente como a data de início da coorte. "Eu gosto da ideia! Podemos fazer essa análise separadamente para clientes do Reino Unido e estrangeiros para ver se sua expansão apressada fez sentido", conclui seu chefe.
+
+“Acredito que a contribuição mais significativa que podemos dar a essa empresa nesta consultoria é ajudá-la a segmentar seus clientes para tomar decisões estratégicas entendendo o público-alvo. Você já ouviu falar sobre a lei de Pareto?“. Vendo seu rosto confuso, ele passa a explicar: “Pareto postula que 80% dos lucros vêm de 20% do esforço. Não é necessário fazer todos os esforços para que um negócio funcione bem, basta ser inteligente e focar seus recursos estrategicamente para obter ótimos resultados. No caso da UK Merch, suspeito que eles estejam gastando mal seus recursos. Eles poderiam focar sua comunicação com muito mais eficiência, focada num público limitado de bons clientes. Para isso preciso que você faça uma segmentação baseada em Recência, Frequência e Quantidade (RFM) e desta forma podemos recomendar estratégias específicas para a UK Merch para atender seus clientes.”
+Com esse contexto, muitas dúvidas, mas também uma grande vontade de aprender, você inicia seu trabalho.
+
+Entregável
+Para considerar este projeto concluído, deverá entregar, através da plataforma de aprendizagem, o seguinte:
+
+Uma planilha que tenha, pelo menos, o seguinte:
+Fonte de dados pré-processada (dados limpos)
+Um guia de relatório com gráficos das principais métricas de negócios
+Uma guia com uma análise por coorte geral e também para clientes do Reino Unido e clientes fora do Reino Unido
+Uma segmentação usando a metodologia RFM
+Todos os dados, tabelas e visualizações adicionais que contribuem para sua análise
+Um vídeo de no máximo 5 minutos simulando uma reunião com seu chefe, onde você explica suas conclusões e recomendações. Para isso você pode contar com sua planilha ou montar uma apresentação no Google Slides. Para se gravar recomendamos a plataforma Loom. Em particular, seu vídeo deve fornecer um diagnóstico de vendas de negócios e recomendações concretas com base em sua análise.
+
+Objetivos de aprendizagem
+Ao resolver este projeto, você será capaz de:
+
+Pré-processar dados em planilhas: identificar dados duplicados, em branco ou fora do domínio (por exemplo, valores negativos quando não aplicável) para preparar seus dados para análise posterior.
+Organizar dados em planilhas: conhecer os diferentes tipos de dados que uma célula aceita e conseguir formatar moedas, datas, números para melhor visualizar as informações. Além disso, usar filtros para organizar os dados e poder ordenar as colunas do maior para o menor (ou vice-versa) de acordo com o tipo de dados.
+Manipular dados em planilhas: usar tabelas dinâmicas para calcular, resumir e analisar dados para ver comparações, padrões e tendências neles. Além disso, poder conectar duas ou mais fontes de dados usando a função PROCV (VLOOKUP).
+Visualizar dados em planilhas: Fazer gráficos de linhas e barras para visualizar informações, resumir descobertas, encontrar padrões ou comparar diferentes séries de dados.
+Fazer uma análise de coorte: organizar as informações para formar coortes de clientes de acordo com a data de entrada no produto/serviço. Realizar cálculos e formatar as informações para encontrar mapas de calor. Identificar pontos de fuga.
+Segmentar clientes utilizando o modelo RFM: entender a regra de Pareto e utilizá-la para identificar os principais clientes do negócio, a fim de concentrar esforços e obter o maior retorno (80/20).
+Recursos
+Além do curso de Skillsbuild de Google Spreadsheet que você já deveria ter feito, recomendamos:
+
+Seção 5 do curso de estatística para não estatísticos que está no learning path de Skillsbuild.
+Este artigo para você aprender sobre segmentação.
+Este podcast que aborda a metodologia de segmentação RFM.
+Este video que explica o conceito de Pareto e como aplicá-lo aos negócios.
+Este video do youtube que mostra como fazer relatórios elegantes com designs modernos.
+Este artigo este artigo que fala sobre boas práticas ao criar relatórios com dados.
+
+
+MANIPULAÇÃO DOS DADOS 
+
+1. Os dados estavam todos agrupados , utilizei a ferramenta de 
+
+1 . CALCULAR A Média de vendas por mês 
+MediaValor = AVERAGE('tabela excel'[valor])
+
+2 . Determinar o número de vendas por mês 
+Mes = MONTH('tabela excel'[Data da fatura])
+
+3 . Identificar o mês com o maior volume de vendas 
+Mês com Maior Volume de Vendas = 
+CALCULATE(
+    MAXX(
+        SUMMARIZE('tabela excel', 'tabela excel'[Mes], "Total Vendas", SUM('tabela excel'[Quantidade])),
+        [Total Vendas]
+    ),
+    ALLEXCEPT('tabela excel', 'tabela excel'[Mes])
+)
+
+4 . Identificar os clientes mais importante 
+Clientes Mais Importantes = 
+CALCULATE(
+    COUNTROWS('tabela excel'),
+    ALLEXCEPT('tabela excel', 'tabela excel'[ID Cliente])
+)
+
+5 . Análise de COORTE
+
+MesPrimeiraCompra = 
+    CALCULATE(
+        MINX('tabela excel', 'tabela excel'[Data da fatura]),
+        ALLEXCEPT('tabela excel', 'tabela excel'[ID Cliente])
+    )
+
+CoorteClientes = 
+    VAR MesCliente = 'tabela excel'[MesPrimeiraCompra]
+    RETURN
+        CALCULATE(
+            COUNTROWS('tabela excel'),
+            FILTER(
+                ALL('tabela excel'),
+                'tabela excel'[ID Cliente] = EARLIER('tabela excel'[ID Cliente]) &&
+                'tabela excel'[Mes] = EARLIER('tabela excel'[Mes]) &&
+                'tabela excel'[MesPrimeiraCompra] <= MesCliente
+            )
+        )
+
+CoorteClientesmes = 
+    VAR MesCliente = 'tabela excel'[MesPrimeiraCompra]
+    RETURN
+        CALCULATE(
+            COUNTROWS('tabela excel'),
+            FILTER(
+                ALL('tabela excel'),
+                'tabela excel'[ID Cliente] = EARLIER('tabela excel'[ID Cliente]) &&
+                'tabela excel'[Mes] = EARLIER('tabela excel'[Mes]) &&
+                'tabela excel'[MesPrimeiraCompra] <= MesCliente
+            )
+        )
+
+
+
+6 . Segmentação RFM 
+Recência = DATEDIFF(MAX('tabela excel'[Data da fatura]), 'tabela excel'[Data da fatura], DAY)
+
+Frequência = COUNTROWS('tabela excel')
+
+Valor Monetário = SUM('tabela excel'[Valor])
+
+Quartil Recência = 
+    IF('tabela excel'[Recência] <= PERCENTILE.INC('tabela excel'[Recência], 0.25), 1,
+    IF('tabela excel'[Recência] <= PERCENTILE.INC('tabela excel'[Recência], 0.5), 2,
+    IF('tabela excel'[Recência] <= PERCENTILE.INC('tabela excel'[Recência], 0.75), 3, 4)))
+
+Quartil Frequência = 
+    IF('tabela excel'[Frequência] <= PERCENTILE.INC('tabela excel'[Frequência], 0.25), 1,
+    IF('tabela excel'[Frequência] <= PERCENTILE.INC('tabela excel'[Frequência], 0.5), 2,
+    IF('tabela excel'[Frequência] <= PERCENTILE.INC('tabela excel'[Frequência], 0.75), 3, 4)))
+
+Quartil Valor Monetário = 
+    IF('tabela excel'[Valor Monetário] <= PERCENTILE.INC('tabela excel'[Valor Monetário], 0.25), 1,
+    IF('tabela excel'[Valor Monetário] <= PERCENTILE.INC('tabela excel'[Valor Monetário], 0.5), 2,
+    IF('tabela excel'[Valor Monetário] <= PERCENTILE.INC('tabela excel'[Valor Monetário], 0.75), 3, 4)))
+
+Segmento RFM = 'tabela excel'[Quartil Recência] & 'tabela excel'[Quartil Frequência] & 'tabela excel'[Quartil Valor Monetário]
+
+
+
+7 . Dashboard 
+
+
+Número de Faturas por País:
+Número de Faturas por País = COUNTROWS('tabela excel')
+
+Porcentagem de Faturas por País = 
+DIVIDE(
+    COUNTROWS('tabela excel'),
+    CALCULATE(COUNTROWS('tabela excel'), ALL('tabela excel'))
+) * 100
+
+
+O Reino Unido é o campeão em compras na UK Merch e representa quase 90% da quantidade de vendas totais. Como a empresa nasceu lá, é bem provável que isso explique o por quê dele estar em primeiro lugar.
+
+Os próximos 4 países com maior quantidade de compras ficam na todos ficam na Europa, ou seja, relativamente próximos ao Reino Unido. Eles são:
+
+Alemanha,
+França,
+Irlanda e
+Bélgica.
+
+
+Os países com maior valor médio por fatura são:
+
+Cingapura,
+Holanda,
+Austrália,
+Japão e
+Líbano.
+
+
+
+
+
+
+
+
+
